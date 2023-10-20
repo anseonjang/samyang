@@ -311,7 +311,7 @@ main {
 
 
 main section#main_slides {
-    position: relative;
+    width: 1920px;
     width: 100%;
     height: 573px;
     display: flex;
@@ -320,7 +320,7 @@ main section#main_slides {
 
 main section#main_slides ul.slides_container {
     position: relative;
-    width: 100%;
+    width: 1920px;
 }
 
 ul.slides_container li {
@@ -399,6 +399,11 @@ ul.slides_container li:nth-child(6) {
     left: 500%;
 }
 
+
+swiper-wrapper {
+  
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
 .swiper { max-width: 100%; } 
 
 
@@ -475,27 +480,27 @@ ul.slides-pagenation li {
 
 
 .swiper-slide:nth-child(1) {
-    background-image: url("../images/main_slide1.jpg");
+    background:#ffcb91 url("../images/main_slide1.jpg")no-repeat center;    
 }
 
 .swiper-slide:nth-child(2) {
-    background-image: url("../images/main_slide2.jpg");
+    background:#fcac7b url("../images/main_slide2.jpg")no-repeat center;    
 }
 
 .swiper-slide:nth-child(3) {
-    background-image: url("../images/main_slide3.jpg");
+    background:#be96b1 url("../images/main_slide3.jpg")no-repeat center;    
 }
 
 .swiper-slide:nth-child(4) {
-    background-image: url("../images/main_slide4.jpg");
+    background:#c1f06e url("../images/main_slide4.jpg")no-repeat center;    
 }
 
 .swiper-slide:nth-child(5) {
-    background-image: url("../images/main_slide5.jpg");
+    background:#a8b8ec url("../images/main_slide5.jpg")no-repeat center;    
 }
 
 .swiper-slide:nth-child(6) {
-    background-image: url("../images/main_slide6.jpg");
+    background:#ffd573 url("../images/main_slide6.jpg")no-repeat center;    
 }
 
 
@@ -545,7 +550,8 @@ section#product-wrap {
     width: 100%;
     height: 982px;
     text-align: center;
-    background: url("../images/bg_product_tab01.jpg")no-repeat 250px 0;
+    background: url("../images/bg_product_tab01.jpg")no-repeat center 0;
+    
     /* 250px 수정 */
     min-width: 1140px;
 }
@@ -670,6 +676,7 @@ ul.control li a {
 
 ul.control li.on {
     background-image: url("../images/ico_slide_control_on.png");
+ 
 }
 
 
@@ -757,7 +764,7 @@ ul.control li.on {
 /* slick slide plugin*/
 .menu-wrap .banner {
     width: 100%;
-    margin: 50px auto;
+    margin: 40px auto;
     /* 수정 */
     min-width: 1140px;
 }
@@ -781,7 +788,7 @@ ul.control li.on {
 /* 라면이름 */
 .menu-wrap .banner .items p+p {
     text-align: center;
-    margin-top: 15px;
+    margin-top: -10px;
     color: #8f8f8f;
     /* 수정 */
     font-size: 14px;
@@ -1076,12 +1083,13 @@ footer .footerWrap .bmenuCopy .copyright p {
 
 /* 퀵메뉴 */
 #quick {
+    display: none;
     width: 142px;
     height: 261px;
     background: url("../images/quick_bg.png")no-repeat;
     position: absolute;
     top: 200px;
-    right: 10px;
+    right: 11%;
     z-index: 9999999999999;
 }
 
